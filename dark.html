@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="dark.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">DevBeats</div>
+        <div class="right-side">
+          <ul>
+            <li><a href="#features">Fitur</a></li>
+            <li><a href="#">Harga</a></li>
+          </ul>
+          <button id="toggle-mode">Dark Mode</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>
+            Teman Setia <br />
+            Developer <br />Saat Menulis Kode
+          </h1>
+          <p>
+            DevBeats dirancang untuk developer. Kualitas audio premium, peredam
+            bising superior, dan kenyamanan untuk sesi koding maraton Anda.
+          </p>
+          <a href="https://shopee.co.id/search?keyword=headphone" class="cta"
+            >Pesan Sekarang</a
+          >
+        </div>
+        <div class="hero-img">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600"
+            alt="DevBeats Headphone"
+          />
+        </div>
+      </section>
+      <section id="features" class="features">
+        <h2>Fitur Unggulan</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Peredam Bising Aktif</h3>
+            <p>
+              Hilangkan suara bising di sekitarmu dan masuk ke dalam zona fokus
+              dengan teknologi ANC (Active Noise Cancellation) terdepan.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Audio Jernih untuk Lo-Fi</h3>
+            <p>
+              Driver audio Hi-Fi kami dioptimalkan untuk genre musik yang
+              membantu konsentrasi, dari lo-fi beats hingga musik klasik.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Baterai Tahan 40 Jam</h3>
+            <p>
+              Satu kali pengisian daya cukup untuk menemani coding-mu sepanjang
+              minggu. Jangan biarkan baterai habis mengganggu alur kerjamu.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="pricing">
+        <h2>Daftar Harga</h2>
+        <div class="price-grid">
+          <div class="price-card">
+            <img
+              src="https://i.pinimg.com/736x/43/15/ae/4315ae69df9daa2550203db798b0d77f.jpg"
+              alt="Headphone Basic"
+            />
+            <h3>Headphone Basic</h3>
+            <p class="price">Rp 150.000</p>
+            <p>
+              Cocok untuk pemula dengan kualitas suara standar dan desain
+              ringan.
+            </p>
+          </div>
+
+          <div class="price-card">
+            <img
+              src="https://i.pinimg.com/736x/43/15/ae/4315ae69df9daa2550203db798b0d77f.jpg"
+              alt="Headphone Pro"
+            />
+            <h3>Headphone Pro</h3>
+            <p class="price">Rp 350.000</p>
+            <p>
+              Dilengkapi peredam bising aktif, cocok untuk fokus belajar atau
+              bekerja.
+            </p>
+          </div>
+
+          <div class="price-card">
+            <img
+              src="https://i.pinimg.com/736x/43/15/ae/4315ae69df9daa2550203db798b0d77f.jpg"
+              alt="Headphone Ultra"
+            />
+            <h3>Headphone Ultra</h3>
+            <p class="price">Rp 750.000</p>
+            <p>
+              Suara Hi-Fi jernih, baterai tahan lama, dan fitur premium untuk
+              profesional.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2025 DevBeats. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+      const btnToggle = document.getElementById("toggle-mode");
+
+      btnToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          btnToggle.textContent = "Light Mode";
+        } else {
+          btnToggle.textContent = "Dark Mode";
+        }
+      });
+    </script>
+  </body>
+</html>
